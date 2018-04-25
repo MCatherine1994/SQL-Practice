@@ -1,6 +1,6 @@
 ## Work Related Notes  
   
-### Testing Approaches:  
+### Testing Approaches
 Unit Testing:  
 Regression Testing:  
 Business Acceptance Testing:  
