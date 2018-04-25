@@ -9,3 +9,5 @@
 4. Table.Coloumn in (:listname) pops up a selection table (as a parameter) to let the user enter a value  
  
 5. SYSDATE is the system date   
+
+6. NVL(String1, replace_with) substitue a value when a null value is encountered
