@@ -18,4 +18,5 @@
           'WHAT', 'REPRESENT WHAT',
           'WHAT') NAME     -------------Name wants to be called
           
-8.
+8. Pop up a selectable window to let you enter the value
+   TABLE.COLOUMN in (:ListName) 
