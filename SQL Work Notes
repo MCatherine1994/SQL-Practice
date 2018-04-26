@@ -13,10 +13,15 @@
 6. NVL(String1, replace_with) substitue a value when a null value is encountered
 
 7. DECODE(TABLE.COLOUMN,
-          'WHAT', 'REPRESENT WHAT',
+          'WHAT', 'REPRESENT WHAT',            //eg. '01', food.apple_price, '02', food.orange_price, '0'
           'WHAT', 'REPRESENT WHAT',
           'WHAT', 'REPRESENT WHAT',
           'WHAT') NAME     -------------Name wants to be called
           
 8. Pop up a selectable window to let you enter the value
    TABLE.COLOUMN in (:ListName) 
+
+9. (CASE TABLE.COLOUMN 
+   WHEN ... THEN ...
+   ELSE...
+   END) Name
