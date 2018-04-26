@@ -11,3 +11,11 @@
 5. SYSDATE is the system date   
 
 6. NVL(String1, replace_with) substitue a value when a null value is encountered
+
+7. DECODE(TABLE.COLOUMN,
+          'WHAT', 'REPRESENT WHAT',
+          'WHAT', 'REPRESENT WHAT',
+          'WHAT', 'REPRESENT WHAT',
+          'WHAT') NAME     -------------Name wants to be called
+          
+8.
