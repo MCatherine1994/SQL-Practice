@@ -6,14 +6,3 @@
 **Business Acceptance Testing:** Ensure that the code meets customer requirements  
 **Functional Testing:** Ensure that the code meets the funtional requirements  
 **Integration Testing:** Verify that components work together integrated system to verify that it meets its requirements   
-
-### Meteor Application  
-**To Create:**  
-```
-meteor create app_name  
-```
-**To Run:**  
-```
-cd app_name
-meteor 
-```
