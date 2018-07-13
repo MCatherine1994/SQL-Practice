@@ -1,13 +1,14 @@
-### **Create a new branch**  
+### **Git Command**
+## **Create a new branch**  
 ```
 $ git branch       //list the current branch
 $ git branch new_branch_name      //create a branch with the new branch name
 ```
-### **Switch between branch**  
+## **Switch between branch**  
 ```
 $ git checkout branch_name
 ```  
-### **Save new changes and push up**  
+## **Save new changes and push up**  
 ```
 $ git status     //check the modified files, should be in red color
 $ git add .      //add all or $ git add <Filename> add a single file
