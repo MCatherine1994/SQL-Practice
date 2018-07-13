@@ -8,4 +8,8 @@ meteor create app_name
 cd app_name
 meteor 
 ```
-
+**To Check the Running Environment:**
+```
+import { Meteor } from 'meteor/meteor';
+if(Meteor.isDevelopment) //check if in development mode
+if(Meteor.isProduction) //check if in production mode
