@@ -1,14 +1,14 @@
 ## **Javascript Testing Framework**  
 ### **Testing Approaches**
-#### **Unit Testing:**  
+#### **[Unit Testing](http://softwaretestingfundamentals.com/unit-testing/):**  
 Individual component is in a controlled environment where programmers validate data structure, logic, and boundary condition. One simple case to test the functionality  
-#### **Regression Testing:**  
+#### **[Regression Testing](https://en.wikipedia.org/wiki/Regression_testing):**  
 Test the original functionality after making the change to make sure the changes did not effect the previous features  
-#### **Business Acceptance Testing:**  
+#### **[Business Acceptance Testing](https://en.wikipedia.org/wiki/Acceptance_testing):**  
 Ensure that the code meets customer requirements  
-#### **Functional Testing:**  
+#### **[Functional Testing](https://en.wikipedia.org/wiki/Functional_testing):**  
 Ensure that the code meets the funtional requirements  
-#### **Integration Testing:**  
+#### **[Integration Testing](http://softwaretestingfundamentals.com/integration-testing/):**  
 Verify that components work together integrated system to verify that it meets its requirements   
 
 ### **Introduction of the most popular five**  
