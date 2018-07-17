@@ -1,5 +1,5 @@
 ## **Javascript Testing Framework**  
-### **Testing Approaches**
+### **Testing Approaches:**
 #### **[Unit Testing](http://softwaretestingfundamentals.com/unit-testing/):**  
 Individual component is in a controlled environment where programmers validate data structure, logic, and boundary condition. One simple case to test the functionality  
 #### **[Regression Testing](https://en.wikipedia.org/wiki/Regression_testing):**  
@@ -11,7 +11,7 @@ Ensure that the code meets the funtional requirements
 #### **[Integration Testing](http://softwaretestingfundamentals.com/integration-testing/):**  
 Verify that components work together integrated system to verify that it meets its requirements   
 
-### **Introduction of the most popular five**  
+### **Introduction of the most popular five:**  
 #### **[Mocha](https://mochajs.org/):**  
 A flexible library providing developers with just the base test structure. Functionality for assertions, spies, mocks, and the like are then added via other libraries/plugins. Requires more configurations. Behaviour Driven Development.  
 #### **[Jasmine](https://jasmine.github.io/):**  
