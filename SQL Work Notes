@@ -27,3 +27,7 @@
    END) Name
 
 10. select * from TABLE limit 10
+
+11. SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
