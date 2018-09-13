@@ -14,7 +14,7 @@ describe('Component Description', () => {
   });
 });
 ```
-#### **Javascript function to reformate a dictionary:**  
+#### **Javascript function to reformat a dictionary:**  
 ```
 // expect result could be like the sample data at the end of this component
 const reformat = (data) => {
