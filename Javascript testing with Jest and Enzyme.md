@@ -1,4 +1,20 @@
 ## **Javascript testing with Jest and Enzyme**
+#### **Unit test pattern for React componment:**   
+```
+describe('Component Description', () => {
+  const component = (
+    <Component anyProperties={anyProperties} />
+  );
+  const wrapper = shallow(component);
+  it('should be defined', () => {
+    expect(Component).toBeDefined();
+  });
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+});
+```
+
 ```
 // expect result could be like the sample data at the end of this component
 const reformat = (data) => {
