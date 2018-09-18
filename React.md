@@ -10,6 +10,7 @@
     <li><a href="#" onClick={() => { this.setState({ tabstate: 'two' }); }}>two</a></li>
   </ul>
 </div>
+
 // Use tabs
 let show = '';
 if (this.state.tabstate === 'one') {
@@ -17,6 +18,7 @@ if (this.state.tabstate === 'one') {
 } else if (this.state.tabstate === 'two') {
   show = 'two';
 }
+
 // Return in Render
 return (
   {show}
