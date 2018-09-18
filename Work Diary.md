@@ -12,7 +12,7 @@
 ```
 1. javascript-d3.js, work on timeSeries chart on the new application
   i) update the xaxis ticks to show the start and end date with the responsive feature
-  ii) added the group feature to the small-multiple timeseries charts
+  ii) add the group feature to the small-multiple timeseries charts, so the charts are displayed by group
 ```
 #### **09/17/2018:**  
 ```
