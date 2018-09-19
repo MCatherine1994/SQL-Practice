@@ -23,6 +23,11 @@ In the package.json, under the jest setting part, having:
   "^module_name": "mock module path",
   "^meteor/meteor": "./tests/__mocks__/meteor/meteor.js",
 }
+Also need to clarify the unmock modules:
+"unmockedModulePathPatterns": [
+  "path to module",
+  "./node_modules/react",
+],
 ```
 #### **Javascript function to reformat a dictionary:**  
 ```
