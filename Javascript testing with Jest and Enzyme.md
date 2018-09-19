@@ -14,6 +14,10 @@ describe('Component Description', () => {
   });
 });
 ```
+#### **Simulate button onClick event:**   
+```
+wrapper.find('#button').simulate('click');
+```
 #### **Mock modules:**   
 ```
 Create a folder named "_mocks_" and store all the mock modules here.  
