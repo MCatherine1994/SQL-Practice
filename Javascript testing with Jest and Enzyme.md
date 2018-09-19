@@ -16,7 +16,9 @@ describe('Component Description', () => {
 ```
 #### **Mock modules:**   
 ```
-Create a folder named "_mocks_" and store all the mock modules here. Depends on what is import in the component, in the mock file, need to export that. In the package.json, under the jest setting part, having:
+Create a folder named "_mocks_" and store all the mock modules here.  
+Depends on what is import in the component, in the mock file, need to export that.  
+In the package.json, under the jest setting part, having:  
 "moduleNameMapper": {
   "^module_name": "mock module path",
   "^meteor/meteor": "./tests/__mocks__/meteor/meteor.js",
