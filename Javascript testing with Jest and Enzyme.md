@@ -18,20 +18,32 @@ describe('Component Description', () => {
 ```
 wrapper.find('#button').simulate('click');
 ```
-#### **Mock modules:**   
+#### **Mocks:**   
+##### **Mock Modules:**
 ```
 Create a folder named "_mocks_" and store all the mock modules here.  
 Depends on what is import in the component, in the mock file, need to export that.  
 In the package.json, under the jest setting part, having:  
 "moduleNameMapper": {
   "^module_name": "mock module path",
-  "^meteor/meteor": "./tests/__mocks__/meteor/meteor.js",
+  "^meteor/meteor": "./tests/__mocks__/meteor/meteor.js", // example
 }
 Also need to clarify the unmock modules:
 "unmockedModulePathPatterns": [
   "path to module",
   "./node_modules/react",
 ],
+```
+##### **Mock Functions:**  
+```
+// call the function
+wrapper.instance().func(); 
+// test function has been called
+const spy = jest.spyOn(wrapper.instance(), 'func');
+wrapper.update();
+wrapper.instance().func(anyprops);
+expect(spy).toHaveBeenCalled();
+expect(spy).toHaveBeenCalledTimes(3);
 ```
 #### **Javascript function to reformat a dictionary:**  
 ```
