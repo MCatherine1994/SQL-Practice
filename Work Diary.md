@@ -26,3 +26,7 @@
 1. React.js: add the table to explain the metric and dimension of some terms related to the new application
 2. Jest Test: updated the test case for new application, test the functions in the component
 ```
+#### **09/21/2018:**  
+```
+1. React.js: update the property to support both year and month format and only year format on the xticks
+```
