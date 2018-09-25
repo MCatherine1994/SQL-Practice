@@ -1,11 +1,10 @@
-## **React**  
+## **React.js**  
 #### **[Tutorial](https://reactjs.org/docs/hello-world.html)**  
-#### **[React Select](https://github.com/JedWatson/react-select)**  
 #### **Tab to switch between two items:**  
 ```
 // Create tabs
-<div className="uk-width-auto@m uk-margin-remove">
-  <ul className="uk-flex-right" uk-tab="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium" >
+<div className="uk-width-auto@m">
+  <ul className="uk-flex-right" uk-tab="animation: uk-animation-slide-left" >
     <li><a href="#" onClick={() => { this.setState({ tabstate: 'one' }); }}>one</a></li>
     <li><a href="#" onClick={() => { this.setState({ tabstate: 'two' }); }}>two</a></li>
   </ul>
@@ -23,3 +22,25 @@ if (this.state.tabstate === 'one') {
 return (
   {show}
 );
+```
+#### **[React Select](https://github.com/JedWatson/react-select):**  
+```
+<fieldset className="uk-fieldset">
+  <Select
+    name="any_name"  
+    placeholder={defaultShow}   // the default content to display
+    closeMenuOnSelect  // default is true, close the drop list after click a selection
+    onChange={this.handleOnChange} // handle when the selection changed
+    options={selectOption} // the drop list for selection
+    styles={colourStyles}
+    value={displayValue} // the value want to display
+  />
+</fieldset>
+```
+#### **Array:**  
+##### **ForEach:**  
+```
+Object.keys(inputarray).forEach((element) => {
+  // do something
+});
+```
