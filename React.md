@@ -37,6 +37,32 @@ return (
   />
 </fieldset>
 ```
+#### **PropTypes:**  
+```
+export default componentName;
+
+// Specifies the default values for props
+componentName.defaultProps = {
+  prop_one: false,
+  prop_two: [], 
+  prop_three: (() => { return null; }),
+  prop_four: {},
+  prop_five: 123,
+};
+
+componentName.propTypes = {
+  prop_one: PropTypes.oneOfType([   // accept two types
+    PropTypes.shape({
+      sub_prop: PropTypes.string,
+    }),
+    PropTypes.bool,
+  ]),
+  prop_two: PropTypes.arrayOf(PropTypes.object),
+  prop_three: PropTypes.func,
+  prop_four: PropTypes.shape(),
+  prop_five: PropTypes.number,
+};
+```
 #### **Array:**  
 ##### **ForEach:**  
 ```
