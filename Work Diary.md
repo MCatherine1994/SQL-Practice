@@ -30,3 +30,9 @@
 ```
 1. React.js: update the property to support both year and month format and only year format on the xticks
 ```
+#### **09/24/2018:**  
+```
+1. React.js: 
+  i) create a dynamic dateList, when the metric change, the dateList change correspondently
+  ii) if the current selected date is in the new metric's dateList, then show the bar charts based on the current date; if not, then display the most recent date in the new metric's dateList
+```
