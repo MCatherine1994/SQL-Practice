@@ -75,6 +75,7 @@ Object.keys(dictionary).forEach((element) => {
 my_array.includes(key)
 ```
 #### **Map:**
+##### **ArrayMap:**  
 ```
 anyarray.map((key) => {
   return (
@@ -83,4 +84,12 @@ anyarray.map((key) => {
     </li>
   );
 })
+```
+##### **Create Map:**  
+```
+const inputArray = [{ title: 'Math', grade: '95' }, { title: 'Science',  grade: '85' }, { title: 'Engineer', grade: '90' }];
+const mapInput = new Map(inputArray.map((i) => { return [i.title, i]; }));
+// if want to get 'Math' from mapInput
+mapInput.get('Math');
+mapInput.get('Math').grade;
 ```
