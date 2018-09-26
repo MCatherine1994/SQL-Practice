@@ -66,11 +66,21 @@ componentName.propTypes = {
 #### **Array:**  
 ##### **ForEach:**  
 ```
-Object.keys(inputarray).forEach((element) => {
+Object.keys(dictionary).forEach((element) => {
   // do something
 });
 ```
 ##### **Includes:**  
 ```
 my_array.includes(key)
+```
+#### **Map:**
+```
+anyarray.map((key) => {
+  return (
+    <li key={key}>
+       {any_display}
+    </li>
+  );
+})
 ```
