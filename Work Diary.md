@@ -36,3 +36,9 @@
   i) create a dynamic dateList, when the metric change, the dateList change correspondently
   ii) if the current selected date is in the new metric's dateList, then show the bar charts based on the current date; if not, then display the most recent date in the new metric's dateList
 ```
+#### **09/25/2018:**  
+```
+1. React.js: 
+  i) handle the case when input data is null, but want to show not reported on the chart instead of not showing the chart. So need to add an empty dataList for those.
+  ii) update the dropdown box to contain the group of each metric
+```
