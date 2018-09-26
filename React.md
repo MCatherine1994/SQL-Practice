@@ -70,3 +70,7 @@ Object.keys(inputarray).forEach((element) => {
   // do something
 });
 ```
+##### **Includes:**  
+```
+my_array.includes(key)
+```
