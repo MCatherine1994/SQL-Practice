@@ -40,5 +40,5 @@
 ```
 1. React.js: 
   i) handle the case when input data is null, but want to show not reported on the chart instead of not showing the chart. So need to add an empty dataList for those.
-  ii) update the dropdown box to contain the group of each metric
+  ii) update the dropdown box to contain the group for each metric
 ```
