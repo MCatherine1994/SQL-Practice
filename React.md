@@ -93,7 +93,7 @@ const mapInput = new Map(inputArray.map((i) => { return [i.title, i]; }));
 mapInput.get('Math');
 mapInput.get('Math').grade;
 ```
-### **Number:**  
+#### **Number:**  
 ```
 // round
 Math.round(number);
