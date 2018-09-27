@@ -93,3 +93,10 @@ const mapInput = new Map(inputArray.map((i) => { return [i.title, i]; }));
 mapInput.get('Math');
 mapInput.get('Math').grade;
 ```
+### **Number:**  
+```
+// round
+Math.round(number);
+// leave two decimals
+Number.parseFloat(datum[m.metric]).toFixed(2)
+```
