@@ -78,7 +78,7 @@ array.push(new_element);
 array.pop(old_element);
 // delete a certain element
 
-//insert at the beginging
+//insert at the beginning
 ```
 ##### **Includes:**  
 ```
