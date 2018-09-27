@@ -46,6 +46,7 @@
 ```
 1. React.js: 
   i) handle the case when input data is null, but want to show the missing cases on bar chart. On the time series, delet the null data among not null data, so the time series chart won't have a drop.
+  ii) update the function that reformat the input data to return {timeSeries: timedata, barChart: bardata, xdomain: xdom, ydomain: ydom}
 ```
 #### **09/27/2018:**  
 ```
