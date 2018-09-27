@@ -42,3 +42,16 @@
   i) handle the case when input data is null, but want to show not reported on the chart instead of not showing the chart. So need to add an empty dataList for those.
   ii) update the dropdown box to contain the group for each metric
 ```
+#### **09/26/2018:**  
+```
+1. React.js: 
+  i) handle the case when input data is null, but want to show the missing cases on bar chart. On the time series, delet the null data among not null data, so the time series chart won't have a drop.
+```
+#### **09/27/2018:**  
+```
+1. d3.js: 
+  i) update the ticks on yaxis to allow both integer and decimals.
+2. Research:
+  i) page tutorial 
+  ii) any npm slider package
+```
