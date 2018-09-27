@@ -70,6 +70,16 @@ Object.keys(dictionary).forEach((element) => {
   // do something
 });
 ```
+##### **Add or Delete:**  
+```
+// push
+array.push(new_element);
+// pop 
+array.pop(old_element);
+// delete a certain element
+
+//insert at the beginging
+```
 ##### **Includes:**  
 ```
 my_array.includes(key)
