@@ -1,5 +1,54 @@
 ## **React.js**  
 #### **[Tutorial](https://reactjs.org/docs/hello-world.html)**  
+#### **Component Construct:**  
+```
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
+/**
+* A CompName component
+*/
+class CompName extends Component {
+  /**
+  * Initialize the React element
+  * @param {props} props React element properties
+  */
+  constructor(props) {
+    super(props);
+    this.state = { anyState: true };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  /**
+* @summary Update the state value
+* @param {number} value
+* @returns {none} null
+*/
+  handleChange = (value) => {
+    this.setState({ anyState: value });
+  }
+
+  /**
+ * Renders a Loading Dots component
+ * @returns {JSX} returns React element
+ */
+  render() {
+    const { any } = this.props;
+    return (
+      <div>
+      {any_element i.e. this.state.anyState}
+      </div>
+    );
+  }
+}
+export default CompName;
+// Specifies the default values for props:
+CompName.defaultProps = {
+};
+
+CompName.propTypes = {
+};
+
+```
 #### **Tab to switch between two items:**  
 ```
 // Create tabs
