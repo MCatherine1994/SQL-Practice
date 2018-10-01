@@ -133,6 +133,12 @@ array.pop(old_element);
 ```
 my_array.includes(key)
 ```
+#### **CheckType:**  
+```
+// check if is string
+if (anyArray instanceof String) {
+}
+```
 #### **Map:**
 ##### **ArrayMap:**  
 ```
