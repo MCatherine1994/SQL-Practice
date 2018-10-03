@@ -56,3 +56,14 @@
   i) page tutorial 
   ii) any npm slider package
 ```
+#### **10/01/2018:**  
+```
+1. React:
+  i) installed and tried two React slider package rc-slider and react-rangeslider
+  ii) update the slider and tooltip to support the case with month and year (discrete value) 
+```
+#### **10/03/2018:**  
+```
+1. React:
+  i) installed and tried to use intro.js to create the web tour
+```
