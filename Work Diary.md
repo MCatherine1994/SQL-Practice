@@ -67,3 +67,8 @@
 1. React:
   i) installed and tried to use intro.js to create the web tour
 ```
+#### **10/05/2018:**  
+```
+1. React.js & d3.js:
+  i) Update the axis for the horizon chart to responsive to the window.pitch event, like adding the current date while mouse move and remove it when mouse out, also set the opacity corresponding
+```
