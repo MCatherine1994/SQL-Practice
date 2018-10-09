@@ -45,9 +45,10 @@ wrapper.instance().func(anyprops);
 expect(spy).toHaveBeenCalled();
 expect(spy).toHaveBeenCalledTimes(3);
 ```
-#### **Test Property:**  
+#### **Test Property and State:**  
 ```
-expect(defaultwrapper.instance().props.name).toEqual('Peter');
+expect(wrapper.instance().props.name).toEqual('Peter');
+expect(wrapper.state('flag')).toEqual('true');
 ```
 #### **Javascript function to reformat a dictionary:**  
 ```
