@@ -1,5 +1,6 @@
 ## **React.js**  
 #### **[Tutorial](https://reactjs.org/docs/hello-world.html)**  
+#### **[React Lifecycle Methods](https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm)**  
 #### **Component Construct:**  
 ```
 import PropTypes from 'prop-types';
