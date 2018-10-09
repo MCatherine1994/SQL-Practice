@@ -45,6 +45,10 @@ wrapper.instance().func(anyprops);
 expect(spy).toHaveBeenCalled();
 expect(spy).toHaveBeenCalledTimes(3);
 ```
+#### **Test Property:**  
+```
+expect(defaultwrapper.instance().props.name).toEqual('Peter');
+```
 #### **Javascript function to reformat a dictionary:**  
 ```
 // expect result could be like the sample data at the end of this component
