@@ -72,3 +72,10 @@
 1. React.js & d3.js:
   i) Update the axis for the horizon chart to responsive to the window.pitch event, like adding the current date while mouse move and remove it when mouse out, also set the opacity corresponding
 ```
+#### **10/09/2018:**  
+```
+1. React.js:
+  i) Work with the package rc-slider and have the slider running as expected, added a player button, and added the feature that when click the player button, it will automatically go thourgh each avaliable value on the slider (a good demo feature)
+2. Jest:
+  i) Updated the test cases for slider component
+```
