@@ -11,3 +11,7 @@ $ cd ..
 $ df -h
 $ sudo apt-get autoremove --purge
 ```
+#### **Remove:**
+```
+$rm -rf folder
+```
