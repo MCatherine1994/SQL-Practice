@@ -18,6 +18,16 @@ class CompName extends Component {
     this.state = { anyState: true };
     this.handleChange = this.handleChange.bind(this);
   }
+  
+    /**
+* @summary Support actions for when the Alphabet Component is first mounted
+* @returns {none} returns nothing
+*/
+  componentDidMount() {
+   // this.handleChange should be other function that handles the event, 
+   // in this case, call the handleChange function every second
+    setInterval(this.handleChange, 1000);
+  }
 
   /**
 * @summary Update the state value
