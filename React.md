@@ -144,12 +144,18 @@ array.pop(old_element);
 ```
 my_array.includes(key)
 ```
+##### **Convert to other type Array:**  
+```
+// string array convert to integer array
+ const NumberArray = StringArray.map(Number)
+```
 #### **CheckType:**  
 ```
 // check if is string
 if (anyArray instanceof String) {
 }
 ```
+
 #### **Map:**
 ##### **ArrayMap:**  
 ```
@@ -174,5 +180,14 @@ mapInput.get('Math').grade;
 // round
 Math.round(number);
 // leave two decimals
-Number.parseFloat(datum[m.metric]).toFixed(2)
+Number.parseFloat(datum[m.metric]).toFixed(2);
+// convert to string
+Number.toString();
+```
+#### **Object(Dictionary):**  
+```
+// get the keys
+Object.keys(dictionary);
+// get the element values
+Object.values(dictionary);
 ```
