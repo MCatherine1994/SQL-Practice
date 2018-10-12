@@ -79,3 +79,10 @@
 2. Jest:
   i) Updated the test cases for slider component
 ```
+#### **10/09/2018:**  
+```
+1. React.js:
+  i)add the full mon and year to the start and end date on the slider
+2. Jest:
+  i) Updated the test cases for slider component
+```
