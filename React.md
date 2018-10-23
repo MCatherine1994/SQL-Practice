@@ -1,5 +1,6 @@
 ## **React.js**  
 #### **[Tutorial](https://reactjs.org/docs/hello-world.html)**  
+#### **[Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)**
 #### **[React Lifecycle Methods](https://www.tutorialspoint.com/reactjs/reactjs_component_life_cycle.htm)**  
 #### **Component Construct:**  
 ```
@@ -123,6 +124,18 @@ componentName.propTypes = {
   prop_five: PropTypes.number,
 };
 ```
+#### **SetState Callback:**  
+```
+// will call the callback instantly after set the state to be true
+this.setState({ currentState: true }, () => {
+  setTimeout(() => {
+    if (currentState) {
+      this.setState({ otherState: true });
+    }
+   }, 1500);
+});
+```
+### **JavaScript:**
 #### **Array:**  
 ##### **ForEach:**  
 ```
@@ -190,4 +203,8 @@ Number.toString();
 Object.keys(dictionary);
 // get the element values
 Object.values(dictionary);
+```
+#### **Date Time:**  
+```
+console.log(new Date('July 20, 69 00:20:18').getMilliseconds());
 ```
