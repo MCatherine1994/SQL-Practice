@@ -208,3 +208,16 @@ Object.values(dictionary);
 ```
 console.log(new Date('July 20, 69 00:20:18').getMilliseconds());
 ```
+#### **Simulate Click Event:**  
+```
+/**
+* @summary reset the state to trigger the tour
+* @param {selector} selector d3 selector
+* @returns {none} unknow
+*/
+simulateClick = (selector) => {
+  const e = document.createEvent('UIEvents');
+  e.initUIEvent('click', true, true /* ... */);
+  d3.select(selector).node().dispatchEvent(e);
+}
+```
