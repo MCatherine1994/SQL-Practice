@@ -135,6 +135,15 @@ this.setState({ currentState: true }, () => {
    }, 1500);
 });
 ```
+#### **Add/Insert React Component to HTML page:**  
+```
+import ReactDOM from 'react-dom';
+const component = <YourComponent />;
+document.body.innerHTML = '<div id="test"><div id="your-comp"></div>' +
+  '<div class="test-title">Hello, World!</div>' +
+  '<div id="test-chart">Test Chart</div></div>';
+ReactDOM.render(component, document.getElementById('your-comp'));
+```
 ### **JavaScript:**
 #### **Array:**  
 ##### **ForEach:**  
@@ -220,4 +229,11 @@ simulateClick = (selector) => {
   e.initUIEvent('click', true, true /* ... */);
   d3.select(selector).node().dispatchEvent(e);
 }
+```
+#### **HTML DOM getElementsBy* Method:**  
+```
+document.getElementsByClassName('example');
+document.getElementById('example');
+document.getElementsByTagName('example');
+document.querySelector('[any_attr_name="attr_value"]');
 ```
