@@ -230,7 +230,7 @@ simulateClick = (selector) => {
   d3.select(selector).node().dispatchEvent(e);
 }
 ```
-#### **HTML DOM getElementsBy* Method:**  
+#### **HTML DOM getElementsBy... Method:**  
 ```
 document.getElementsByClassName('example');
 document.getElementById('example');
