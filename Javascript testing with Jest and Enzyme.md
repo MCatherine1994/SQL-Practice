@@ -14,6 +14,9 @@ describe('Component Description', () => {
   });
 });
 ```
+#### **Integration test pattern:**  
+```
+```
 #### **Simulate button onClick event:**   
 ```
 wrapper.find('#button').simulate('click');
