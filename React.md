@@ -46,9 +46,9 @@ class CompName extends Component {
   render() {
     const { any } = this.props;
     return (
-      <div>
+      <div> // <React.Fragment>
       {any_element i.e. this.state.anyState}
-      </div>
+      </div>  // </React.Fragment>
     );
   }
 }
@@ -143,6 +143,13 @@ document.body.innerHTML = '<div id="test"><div id="your-comp"></div>' +
   '<div class="test-title">Hello, World!</div>' +
   '<div id="test-chart">Test Chart</div></div>';
 ReactDOM.render(component, document.getElementById('your-comp'));
+```
+#### **React.Fragment:**  
+```
+if <div> </div> has no meaning except for the linting problem, then use <React.Fragment></React.Fragment> instead
+<React.Fragment>
+  <any_component />
+</React.Fragment>
 ```
 ### **JavaScript:**
 #### **Array:**  
