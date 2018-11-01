@@ -50,6 +50,10 @@ expect(spy).toHaveBeenCalledTimes(3);
 expect(wrapper.instance().props.name).toEqual('Peter');
 expect(wrapper.state('flag')).toEqual('true');
 ```
+#### **Enzyme find():**  
+```
+wrapper.find('.classname').at(0).simulate('click');  // if there are four elements has the same classname, at(0) returns the first one
+```
 #### **Javascript function to reformat a dictionary:**  
 ```
 // expect result could be like the sample data at the end of this component
