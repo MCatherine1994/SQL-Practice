@@ -102,7 +102,7 @@ web tour
 #### **10/31/2018:**  
 ```
 1. React.js:
-  i) Finshed writing of slider and web tutorialr, tested webtour on a small application and on a main application
+  i) Finshed writing of slider and web tutorialr, tested webtour on a small application and on a main application, fixed the old bugs for uikit off-canvas
 2. Jest:
   i) Work on the integration test of the web tutorial and slider
 ```
