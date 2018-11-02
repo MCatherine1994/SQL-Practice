@@ -72,7 +72,7 @@
 1. React.js & d3.js:
   i) Update the axis for the horizon chart to responsive to the window.pitch event, like adding the current date while mouse move and remove it when mouse out, also set the opacity corresponding
 ```
-#### **10/09/2018:**  
+#### **10/08/2018:**  
 ```
 1. React.js:
   i) Work with the package rc-slider and have the slider running as expected, added a player button, and added the feature that when click the player button, it will automatically go thourgh each avaliable value on the slider (a good demo feature)
@@ -85,4 +85,29 @@
   i)add the full mon and year to the start and end date on the slider
 2. Jest:
   i) Updated the test cases for slider component
+```
+#### **A brief summary:**  
+```
+last updated date
+more features on time series chart
+unit test with jest and enzyme
+donut chart
+bar chart (stacked bar chart, filtered bar chart)
+demo pages
+small multiples
+new application page
+slider
+web tour
+```
+#### **10/31/2018:**  
+```
+1. React.js:
+  i) Finshed writing of slider and web tutorialr, tested webtour on a small application and on a main application
+2. Jest:
+  i) Work on the integration test of the web tutorial and slider
+```
+#### **11/02/2018:**  
+```
+1. React.js:
+  i) Added the slider on one of the main application to actually work with the data and map
 ```
