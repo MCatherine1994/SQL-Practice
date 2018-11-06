@@ -42,7 +42,7 @@ Also need to clarify the unmock modules:
 // call the function
 wrapper.instance().func(); 
 // test function has been called
-const spy = jest.spyOn(wrapper.instance(), 'func');
+const spy = jest.spyOn(wrapper.instance(), 'func');  //'func' is the function name of the function in the component
 wrapper.update();
 wrapper.instance().func(anyprops);
 expect(spy).toHaveBeenCalled();
