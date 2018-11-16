@@ -20,6 +20,8 @@ describe('Component Description', () => {
 #### **Simulate button onClick event:**   
 ```
 wrapper.find('#button').simulate('click');
+// enzyme find and click
+wrapper.find('.classname').at(0).simulate('click');  // if there are multiple elements has the same classname, at(0) returns the first one
 ```
 #### **Mocks:**   
 ##### **Mock Modules:**
@@ -52,10 +54,6 @@ expect(spy).toHaveBeenCalledTimes(3);
 ```
 expect(wrapper.instance().props.name).toEqual('Peter');
 expect(wrapper.state('flag')).toEqual('true');
-```
-#### **Enzyme find():**  
-```
-wrapper.find('.classname').at(0).simulate('click');  // if there are four elements has the same classname, at(0) returns the first one
 ```
 #### **Javascript function to reformat a dictionary:**  
 ```
