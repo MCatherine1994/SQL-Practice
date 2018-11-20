@@ -16,6 +16,18 @@ describe('Component Description', () => {
 ```
 #### **Integration test pattern:**  
 ```
+describe('Integration Test for WebTour Component', () => {
+  beforeEach(() => {
+    const component = <Component />;
+    document.body.innerHTML = '<div id="testing"><div id="test-component"></div>' +
+      '<div class="test-title">Hello, this is the integration test</div>' +
+      '</div>';
+    ReactDOM.render(component, document.getElementById('test-component'));
+    window.Element.prototype.getComputedTextLength = function test() {
+      return 200;
+    };
+  });
+});
 ```
 #### **Simulate button onClick event:**   
 ```
