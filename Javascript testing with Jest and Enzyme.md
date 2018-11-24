@@ -17,8 +17,10 @@ describe('Component Description', () => {
 #### **Integration test pattern:**  
 ```
 describe('Integration Test for WebTour Component', () => {
-  beforeEach(() => {
-    const component = <Component />;
+  const component = <Component />;
+  const page = shallow(component);
+
+  beforeEach(() => {  
     document.body.innerHTML = '<div id="testing"><div id="test-component"></div>' +
       '<div class="test-title">Hello, this is the integration test</div>' +
       '</div>';
@@ -27,6 +29,15 @@ describe('Integration Test for WebTour Component', () => {
       return 200;
     };
   });
+  
+  it('Should be defined', () => {
+    expect(component).toBeDefined();
+  });
+
+  it('Should contains other components', () => {
+    expect(page.find('Other_Component').length).toBeGreaterThan(0);
+  });
+
 });
 ```
 #### **Simulate button onClick event:**   
