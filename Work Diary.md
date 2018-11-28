@@ -111,3 +111,9 @@ web tour
 1. React.js:
   i) Added the slider on one of the main application to actually work with the data and map
 ```
+#### **11/05/2018:**  
+```
+1. React.js:
+  i) Work on the new project, the map for the bc province using GitLab
+  ii) Update boundary files to be in Geojson format
+```
