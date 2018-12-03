@@ -6,6 +6,8 @@
 ```
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import AnyOtherComponment, { AnyOtherMethod } from '../components/AnyOtherComponment'; // AnyOtherMethod is the method in the AnyOtherComponment
+
 /**
 * A CompName component
 */
@@ -32,11 +34,12 @@ class CompName extends Component {
 
   /**
 * @summary Update the state value
+* @param {string} name
 * @param {number} value
 * @returns {none} null
 */
-  handleChange = (value) => {
-    this.setState({ anyState: value });
+  handleChange = (name, value) => {
+    this.setState({ [name]: value });
   }
 
   /**
@@ -126,7 +129,7 @@ componentName.propTypes = {
 ```
 #### **SetState Callback:**  
 ```
-// will call the callback instantly after set the state to be true
+// will call the callback instantly after set the state to be true, this is the way to set state synchronous
 this.setState({ currentState: true }, () => {
   setTimeout(() => {
     if (currentState) {
@@ -134,15 +137,6 @@ this.setState({ currentState: true }, () => {
     }
    }, 1500);
 });
-```
-#### **Add/Insert React Component to HTML page:**  
-```
-import ReactDOM from 'react-dom';
-const component = <YourComponent />;
-document.body.innerHTML = '<div id="test"><div id="your-comp"></div>' +
-  '<div class="test-title">Hello, World!</div>' +
-  '<div id="test-chart">Test Chart</div></div>';
-ReactDOM.render(component, document.getElementById('your-comp'));
 ```
 #### **React.Fragment:**  
 ```
