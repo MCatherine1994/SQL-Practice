@@ -50,7 +50,10 @@ class CompName extends Component {
     const { any } = this.props;
     return (
       <div> // <React.Fragment>
-      {any_element i.e. this.state.anyState}
+        {any_element i.e. this.state.anyState}
+        <div className="uk-grid uk-child-width-expand@s" uk-grid={null}>
+          {any_thing want to display in grid}
+        </div>
       </div>  // </React.Fragment>
     );
   }
