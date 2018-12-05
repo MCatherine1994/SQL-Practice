@@ -17,5 +17,5 @@ if(Meteor.isProduction) //check if in production mode
 **To Clear Space:**  
 ```
 $ meteor reset  // reset the database
-$ meteor npm prune  // remove unusable packages
+$ meteor npm prune  // remove unused packages
 ```
