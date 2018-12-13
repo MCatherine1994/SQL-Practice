@@ -57,6 +57,23 @@ describe('Integration Test for WebTour Component', () => {
   });
 });
 ```
+#### **Functional testing example:**
+```
+import puppeteer from 'puppeteer';
+
+describe('Component test', () => {
+it('test should match screenshot', async () => {
+jest.setTimeout(30000);
+const browser = await puppeteer.launch();
+const page = await browser.newPage();
+await page.goto('http://localhost:3000/', { waitUntil: 'load' });
+await page.waitForSelector('#any_id');
+await page.screenshot({ path: 'screenshot.png' });
+await browser.close();
+});
+});
+
+```
 #### **Simulate button onClick event:**   
 ```
 wrapper.find('#button').simulate('click');
