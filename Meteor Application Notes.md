@@ -77,3 +77,42 @@ Meteor.call('getQueryResult', querydata, (error, result) => {
   }
 });
 ```
+**Mongo Collection:**
+```
+// in api collectionName.js
+import { Mongo } from 'meteor/mongo';
+export const collectionName = new Mongo.Collection('collectionName');
+
+// on server side main.js
+import '../imports/api/collectionName';
+
+// in mongo python
+import MySQLdb 
+from MySQLdb.cursors import DictCursor
+def collectionName(connection):
+    """collectionName application"""
+    log = logging.getLogger(LOG_NAME)
+    log.debug('collectionName')
+
+    database = MySQLdb.connect(
+        read_default_file="file_directory",
+        use_unicode=True,
+        cursorclass=DictCursor,
+    )
+    cursor = database.cursor()
+    documents = {}
+
+    # select all avaliable data
+    cursor.execute("""
+        any_query
+    """)
+
+    # mirror the default aggregation into mongo
+    documents = cursor.fetchall()
+    documents = sorted(alls, key=lambda rec: (rec['attr1'], rec['att2']))
+  
+    mirror(connection, dict(name='collectionName', documents=[document]))
+    log.info('%d observations for collectionName', len(documents))
+
+    database.close()
+```
