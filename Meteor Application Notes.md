@@ -116,3 +116,39 @@ def collectionName(connection):
 
     database.close()
 ```
+**Routes:**
+```
+// startup/client/routes.jsx
+export const renderRoutes = () => {
+  return (
+    <Router history={browserHistory}>
+      <Switch>
+        <Route path="/" exact render={HomePage} />
+        <Route path="/sub" component={SubPage} />
+        <Route render={NotFoundPage} />
+      </Switch>
+    </Router>
+  );
+};
+
+export default 'renderRoutes';
+```
+**Meteor Startup Render:**
+```
+// in main.jsx
+Meteor.startup(() => {
+  const user = {
+    User: headers.get('user'),
+    Email: headers.get('email'),
+  };
+
+  render(<Header
+    user={user}
+    isDevelopment={Meteor.isDevelopment}
+    navbar={[<MenuContainer />]}
+  />, document.getElementById('header'));
+  render(<ConnectError />, document.getElementById('connecterror'));  // these id are in main.html
+  render(renderRoutes(), document.getElementById('render-target'));
+  render(<Footer />, document.getElementById('footer'));
+});
+```
