@@ -38,6 +38,10 @@ describe('Integration Test for WebTour Component', () => {
     expect(page.find('Other_Component').length).toBeGreaterThan(0);
   });
   
+  it('Expect function to be an instance of function', () => {
+    expect(props.func).toBeInstanceOf(Function);
+  });
+  
   it('Function should been called when another component invoked",, () =>  {
     // suppose function change the page state flag, flag origin is false
     const spy = jest.spyOn(page.instance(), 'function');
@@ -91,4 +95,32 @@ expect(spy).toHaveBeenCalledTimes(3);
 expect(wrapper.instance().props.name).toEqual('Peter');
 expect(wrapper.state('flag')).toEqual('true');
 ```
+#### **Test d3 chart:**
+```
+import testChart from 'chart_directory';
+describe('Reusable d3.js chart', () => {
+  let chart = null;
 
+  beforeEach(() => {
+    chart = testChart();
+  });
+
+  it('Should be defined', () => {
+    expect(testChart).toBeDefined();
+  });
+
+  it('Should be a function', () => {
+    expect(testChart).toBeInstanceOf(Function);
+  });
+  
+  // metehod to test api
+  it('Should find and set width and height', () => {
+    // Should exist not as 0
+    expect(chart.width()).toBeGreaterThan(0);
+    expect(chart.height()).toBeGreaterThan(0);
+    // Should be able to be set
+    expect(chart.width(500).width()).toEqual(500);
+    expect(chart.height(450).height()).toEqual(450);
+  });
+ });
+```
