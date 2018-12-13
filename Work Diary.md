@@ -91,6 +91,7 @@
 last updated date (react component)
 more features on time series chart (zoom in and out chart by clicking on axis ticks, mouse move on chart to see highlight x, y values on axis)
 unit test with jest and enzyme
+rss subscribe
 donut chart
 bar chart (stacked bar chart, filtered bar chart)
 demo pages
@@ -99,7 +100,7 @@ filter component using React Select
 new application interjurisdictional page (mongo collection, python code)
 slider (with rc-slider package)
 web tour (with reacttour package)
-new application bc map
+new application bc map generator (with different layers, reverse and change color, drop file, guided tour, filter selector with dynamic option list read from the drop file)
 integration test
 aplly slider to existing application page for bubble chart (call meteor method to run in database)
 function test with puppeteer
