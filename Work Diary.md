@@ -95,6 +95,7 @@ donut chart
 bar chart (stacked bar chart, filtered bar chart)
 demo pages
 small multiples chart
+filter component using React Select
 new application interjurisdictional page (mongo collection, python code)
 slider (with rc-slider package)
 web tour (with reacttour package)
