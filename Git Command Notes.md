@@ -3,6 +3,7 @@
 ```
 $ git branch       //list the current branch
 $ git branch new_branch_name      //create a branch with the new branch name
+$ git fetch  // get both the remote and local repository
 ```
 **Switch between branch**  
 ```
