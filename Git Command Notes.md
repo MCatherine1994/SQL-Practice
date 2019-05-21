@@ -7,7 +7,8 @@ $ git fetch  // get both the remote and local repository
 ```
 **Switch between branch**  
 ```
-$ git checkout branch_name
+$ git checkout branch_name    // to local branch
+$ git checkout --track origin/newsletter   // to remote branch newsletter, and a local branch newsletter will be created
 ```  
 **Save new changes and push up**  
 ```
