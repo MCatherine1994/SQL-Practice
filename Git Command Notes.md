@@ -22,3 +22,9 @@ $ git log       //see if all the changes have been made or $ git log -p to see t
 $ git push origin branch_name      //add the branch to the origin repository
 $ git pull origin branch_name      //if want to get the new version, pull from the origin repository
 ```  
+**Delete branch**  
+```
+$ git branch -d branch_name   // delete local branch
+$ git branch -D branch_name   // force delete local branch
+$ git push --delete origin branch_name    // delete remote branch, but won't delete the local one
+```
