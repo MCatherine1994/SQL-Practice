@@ -28,3 +28,8 @@ $ git branch -d branch_name   // delete local branch
 $ git branch -D branch_name   // force delete local branch
 $ git push --delete origin branch_name    // delete remote branch, but won't delete the local one
 ```
+**Remote repository**  
+```
+$ git remote -v   // check remote repository
+$ git remote add repo_name repo_address    // add a new remote repository, repo_address could be url or hard drive
+```
