@@ -36,4 +36,12 @@ $ git remote add repo_name repo_address    // add a new remote repository, repo_
 ```
 $ git tag   // show tags
 $ git push --tag <remote_name>   // push tags to remote repository
+```  
+**[Remove Sensitive data files from git commit history](https://help.github.com/en/articles/removing-sensitive-data-from-a-repository#using-filter-branch)** 
+ref reading:   
+[git filter-branch](https://git-scm.com/docs/git-filter-branch)  
+[git rm](https://git-scm.com/docs/git-rm)  
 ```
+git filter-branch --force --index-filter "git rm -r --cached --ignore-unmatch path/to/file(or path/to/folder/)" --prune-empty --tag-name-filter cat -- --all
+```
+
