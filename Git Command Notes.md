@@ -30,7 +30,8 @@ $ git pull origin branch_name      //if want to get the new version, pull from t
 **Remote repository**  
 ```
 $ git remote -v   // check remote repository
-$ git remote add repo_name repo_address    // add a new remote repository, repo_address could be url or hard drive
+$ git remote add repo_name repo_address    // add a new remote repository, repo_address could be url or hard drive (hard drive ends by .git)
+$ git remote rm repo_name
 ```
 **Tags**  
 ```
