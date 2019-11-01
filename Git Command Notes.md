@@ -46,3 +46,11 @@ ref reading:
 git filter-branch --force --index-filter "git rm -r --cached --ignore-unmatch path/to/file(or path/to/folder/)" --prune-empty --tag-name-filter cat -- --all
 ```
 
+**Remove Git history**
+```
+# in Linux, simply remove the .git folder
+$ ls -al   # list all file in the current folder
+$ rm -rf .git
+$ git init .  # will create a new empty git repository
+```
+
