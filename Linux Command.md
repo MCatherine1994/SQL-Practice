@@ -31,3 +31,9 @@ $ chmod -R 777 filename
 // in host machine, run
 $ scp username@guest_ip:/file/path/filename /host/path/to/store
 ```
+#### **Start html File in VM:**  
+```
+python -m SimpleHTTPServer <port_num> 
+// the address to access from browser: http://vm_ip:<port>/chart.html
+// i.e. http://ip:8000/chart.html, must run this command in the directory of the html file
+```
