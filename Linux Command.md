@@ -37,3 +37,9 @@ python -m SimpleHTTPServer <port_num>
 // the address to access from browser: http://vm_ip:<port>/chart.html
 // i.e. http://ip:8000/chart.html, must run this command in the directory of the html file
 ```
+
+#### **Check if a dependency alrealy installed:**  
+```
+$ dpkg -s pkg_name
+
+```
