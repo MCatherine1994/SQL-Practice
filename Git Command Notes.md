@@ -39,6 +39,10 @@ $ git remote rm repo_name
 $ git tag   // show tags
 $ git push --tag <remote_name>   // push tags to remote repository
 ```  
+**Compare the same file in two different branch**  
+```
+$ git diff branchA branchB -- file.cs
+``` 
 **[Remove Sensitive data files from git commit history](https://help.github.com/en/articles/removing-sensitive-data-from-a-repository#using-filter-branch)**   
 ref reading:   
 [git filter-branch](https://git-scm.com/docs/git-filter-branch)  
