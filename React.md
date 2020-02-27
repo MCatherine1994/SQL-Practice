@@ -170,6 +170,10 @@ array.pop(old_element);
 ```
 my_array.includes(key)
 ```
+##### **Get rid of white space in string:**  
+```
+str = str.replace(/\s/g, '');
+```
 ##### **Convert to other type Array:**  
 ```
 // string array convert to integer array
