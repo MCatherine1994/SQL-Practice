@@ -220,6 +220,8 @@ Number.toString();
 Object.keys(dictionary);
 // get the element values
 Object.values(dictionary);
+// revert keys and values of a dictionary
+Object.fromEntries(Object.entries(obj).map(([k, v]) => ([v, k])))
 ```
 #### **Date Time:**  
 ```
