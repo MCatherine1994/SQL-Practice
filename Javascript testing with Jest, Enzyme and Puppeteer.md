@@ -141,3 +141,4 @@ describe('Reusable d3.js chart', () => {
   });
  });
 ```
+#### **[Difference of enzyme Shallow and Mount](https://blog.usejournal.com/testing-with-jest-and-enzyme-in-react-part-4-shallow-vs-mount-in-enzyme-d60cad73f85c)**  
