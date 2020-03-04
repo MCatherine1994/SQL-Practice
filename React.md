@@ -220,10 +220,13 @@ Number.toString();
 Object.keys(dictionary);
 // get the element values
 Object.values(dictionary);
+
 // revert keys and values of a dictionary
 Object.fromEntries(Object.entries(obj).map(([k, v]) => ([v, k])))
+
 // get unique values from the object
 Array.from(new Set(Object.values(dictionary)))
+
 // dynamic add each element of an arry or object
 Object.keys(dictionary).map((key) => {
   return (
