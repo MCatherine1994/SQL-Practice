@@ -12,3 +12,7 @@ Npm package can't be written in ES6,  so need to convert the files.
 ```
 $ babel src --out-dir dist --copy-files -s inline // covert all .jsx files in src to dist in correct format, copy rest css files  
 ```
+Test npm package locally, install the local package
+```
+$ npm install home/path/to/project
+```
